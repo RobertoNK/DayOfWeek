@@ -1,0 +1,24 @@
+Write a program named DayOfWeek that computes the day fo the
+week for nay date entered by the user. The user will be
+prompet to enter month, day, and year. The program will
+then display tthe day of the week for that date as a number
+between 1 and 7, where 1 represents Sunday and 7 represents
+Saturday. The following example shows what the user will see
+on the screen.
+
+This program calculates the day of the week for any date.
+
+Enter month (1-12): 9
+Enter day (1-31): 25
+Enter year: 1998
+
+The of the week is 6(1 = Sunday; 7 = Saturday)
+
+The day of the week is determined by the following formula
+
+J is century (19, in our example)
+K is the year within the century (18)
+m is the month (9)
+q is the day of the month (25)
+
+h = (q+26(m+1)/10 + k +k/4 +J/4 +5J) mod 7
